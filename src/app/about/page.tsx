@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <>
+    <br></br>
       <Breadcrumb
         pageName="About"
         description="Evodata Analytics & Consulting Group is an Analytics and Tech Consulting company which offers enterprise grade solutions and analytics services on cloud and on prem with Industry Standard SDLC processes."
