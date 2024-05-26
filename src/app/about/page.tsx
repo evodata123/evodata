@@ -5,8 +5,8 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Page |  EvoData Analytics and Consulting Group",
-  description: "This is about page for Evodata Analytics and Consulting Group",
+  title: "About Page |  Evanta Analytics and Consulting",
+  description: "This is about page for Evanta Analytics and Consulting",
   // other metadata
 };
 
@@ -16,7 +16,7 @@ const AboutPage = () => {
     <br></br>
       <Breadcrumb
         pageName="About"
-        description="Evodata Analytics & Consulting Group is an Analytics and Tech Consulting company which offers enterprise grade solutions and analytics services on cloud and on prem with Industry Standard SDLC processes."
+        description="Evanta Analytics & Consulting  is an Analytics and Tech Consulting company which offers enterprise grade solutions and analytics services on cloud and on prem with Industry Standard SDLC processes."
       />
       <AboutSectionOne />
       <AboutSectionTwo />

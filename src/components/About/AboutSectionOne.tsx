@@ -24,7 +24,7 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="An AI first enterprise -- EvoData"
+                title="An AI first enterprise -- Evanta"
                 paragraph="The company focusses on delivering smart solutions to its customers and ensures quality work in every aspect of software development from documentation to production."
                 mb="44px"
               />

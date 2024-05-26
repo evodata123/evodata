@@ -27,7 +27,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  EvoData Analytics and Consulting Group 
+                  Evanta Analytics and Consulting Group 
                 </p>
                 <div className="flex items-center">
                   <a

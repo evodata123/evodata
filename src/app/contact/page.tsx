@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Page",
-  description: "This is Contact Page for EvoData Analytics and Consulting Group",
+  description: "This is Contact Page for Evanta Analytics and Consulting.",
   // other metadata
 };
 

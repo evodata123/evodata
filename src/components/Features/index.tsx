@@ -9,7 +9,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="Services Offered"
-            paragraph="EvoData offers Technology solutions, Process Re-engineering, Analytics and Digitisation solution across all the spheres."
+            paragraph="Evanta offers Technology solutions, Process Re-engineering, Analytics and Digitisation solution across all the spheres."
             center
           />
 
