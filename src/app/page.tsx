@@ -12,8 +12,8 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Evo Data Analytics and Consulting Group",
-  description: "This is Home for Evo Data Analytics and Consulting Group",
+  title: "Evanta Analytics and Consulting",
+  description: "This is Home for Evanta Analytics and Consulting Group",
   // other metadata
 };
 
