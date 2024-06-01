@@ -1,8 +1,8 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import product1 from "@/components/products/product1"
-
+import product from "@/components/products/product"
+import React from 'react';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,18 +11,16 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-const ProductsPage = () => {
-  return (
-    <>
-    <br></br>
-      <Breadcrumb
-        pageName="Products"
-        description="Evanta Analytics & Consulting believes in delivering user friendly intuitive products. Our range of products consists of various such amazing software."
-      />
-      <product1 />
-      
-    </>
-  );
-};
-
-export default ProductsPage;
+const ProductPage: React.FC = () => {
+    return (
+      <div>
+        <product
+          heading="Advanced Analytics Tool"
+          description="Our Advanced Analytics Tool provides deep insights into your data, enabling you to make informed decisions and optimize your business performance."
+          videoUrl="https://www.youtube.com/embed/your-video-id"
+        />
+      </div>
+    );
+  };
+  
+  export default ProductPage;
