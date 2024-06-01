@@ -1,6 +1,7 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import product1 from "@/components/products/product1"
 
 import { Metadata } from "next";
 
@@ -18,8 +19,8 @@ const ProductsPage = () => {
         pageName="Products"
         description="Evanta Analytics & Consulting believes in delivering user friendly intuitive products. Our range of products consists of various such amazing software."
       />
-      <AboutSectionOne />
-      <AboutSectionTwo />
+      <product1 />
+      
     </>
   );
 };
