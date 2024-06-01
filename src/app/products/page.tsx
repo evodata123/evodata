@@ -1,26 +1,104 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+import SingleBlog from "@/components/Blog/SingleBlog";
+import blogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import product from "@/components/products/product"
-import React from 'react';
+import productdata from "@/components/products/productdata"
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Products Page |  Evanta Analytics and Consulting",
-  description: "This page lists the customisable and AI enabled products built by Evanta Analytics and Consulting. #Customer Relationship Management #Intelligent Systems",
+  title: "Products Page | Evanta Analytics & Consulting",
+  description: "This page lists all the customisable and end to end solutions and products of Evanta Analytics & Consulting",
   // other metadata
 };
 
-const ProductPage: React.FC = () => {
-    return (
-      <div>
-        <product
-          heading="Advanced Analytics Tool"
-          description="Our Advanced Analytics Tool provides deep insights into your data, enabling you to make informed decisions and optimize your business performance."
-          videoUrl="https://www.youtube.com/embed/your-video-id"
-        />
-      </div>
-    );
-  };
-  
-  export default ProductPage;
+const Product = () => {
+  return (
+    <>
+      <br></br>
+      <br></br>
+      <Breadcrumb
+        pageName="Products"
+        description="Discover the power of data with Evanta Analytics cutting-edge solutions. Our products offer real-time insights, helping you make informed decisions and drive growth. From detailed reports to predictive analytics, we provide tools tailored to your business needs. Enhance your performance with our intuitive dashboards and customizable features. Explore Evanta Analytics product suite and transform your data into actionable intelligence."
+      />
+
+      <section className="pb-[120px] pt-[120px]">
+        <div className="container">
+          <div className="-mx-4 flex flex-wrap justify-center">
+            {productdata.map((blog) => (
+              <div
+                key={blog.id}
+                className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3"
+              >
+                { <SingleBlog blog={blog} /> }
+              
+              </div>
+            ))}
+          </div>
+      
+
+          {/* <div className="-mx-4 flex flex-wrap" data-wow-delay=".15s">
+            <div className="w-full px-4">
+              <ul className="flex items-center justify-center pt-8">
+                <li className="mx-1">
+                  <a
+                    href="#0"
+                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
+                  >
+                    Prev
+                  </a>
+                </li>
+                <li className="mx-1">
+                  <a
+                    href="#0"
+                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
+                  >
+                    1
+                  </a>
+                </li>
+                <li className="mx-1">
+                  <a
+                    href="#0"
+                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
+                  >
+                    2
+                  </a>
+                </li>
+                <li className="mx-1">
+                  <a
+                    href="#0"
+                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
+                  >
+                    3
+                  </a>
+                </li>
+                <li className="mx-1">
+                  <span className="flex h-9 min-w-[36px] cursor-not-allowed items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color">
+                    ...
+                  </span>
+                </li>
+                <li className="mx-1">
+                  <a
+                    href="#0"
+                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
+                  >
+                    12
+                  </a>
+                </li>
+                <li className="mx-1">
+                  <a
+                    href="#0"
+                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
+                  >
+                    Next
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div> */}
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Product;
